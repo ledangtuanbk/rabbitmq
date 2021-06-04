@@ -6,4 +6,7 @@ services:
         ports:
             - '5672:5672'
             - '15672:15672'
+        environment:
+            - RABBITMQ_DEFAULT_USER=admin
+            - RABBITMQ_DEFAULT_PASS=admin@123
         image: 'rabbitmq:3.8.16-management'
